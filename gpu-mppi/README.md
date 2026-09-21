@@ -38,6 +38,13 @@ https://discourse.openrobotics.org/t/mppi-controller-cuda-cuda-accelerated-mppi-
 - once it works, wrap it as its own nav2 controller plugin so it can swap in
   wherever the stock MPPI controller is used
 
+## relevant files
+
+- `src/navigation/rlai_navigation/config/nav2_params.yaml` — where the stock
+  MPPI controller is configured, this is what we're replacing
+- `src/navigation/rlai_navigation/launch/navigation.launch.py` — nav2 launch,
+  where the new controller plugin gets wired in once it exists
+
 ## status
 
 just getting set up. nothing built yet.

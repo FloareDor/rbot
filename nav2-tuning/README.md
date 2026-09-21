@@ -23,6 +23,13 @@ don't jump straight to automated optimization. that's step 3, not step 1.
    those metrics. automating tuning before you have real benchmarks/metrics
    just means you're optimizing blind.
 
+## relevant files
+
+- `src/navigation/rlai_navigation/config/nav2_params.yaml` — the params we're
+  actually tuning
+- `src/navigation/rlai_navigation/launch/navigation.launch.py` — nav2 launch,
+  this is what the headless sim loop needs to drive
+
 ## status
 
 just getting set up. no code yet, need to pick a sim + course format and
